@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:pomodoro/screen/home_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(App());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class App extends StatelessWidget {
+  const App({super.key});
 
   // This widget is the root of your application.
   @override
@@ -18,9 +19,7 @@ class MyApp extends StatelessWidget {
             color: Color(0xFF232B55),
           )),
           cardColor: const Color(0xFFF4EDDB)),
-      home: const Scaffold(
-        body: Center(),
-      ),
+      home: const HomeScreen(),
     );
   }
 }
